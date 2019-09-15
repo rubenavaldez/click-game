@@ -6,7 +6,7 @@ import Banner from './components/Banner';
 import IconCard from './components/IconCard'
 import Icons from './icons.json'
 
-import ".components/IconCard.css"
+// import ".components/IconCard.css";
 
 const shuffleArray = array => {
   let counter = array.length;
