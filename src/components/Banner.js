@@ -26,7 +26,7 @@ const Banner = props => (
             <br></br>
              it's Game Over.
             <br></br>
-            Can you remember what you've clicked so far?
+            Can you remember?
             </h2>    
         </article>
 )
