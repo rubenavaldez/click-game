@@ -13,7 +13,7 @@ const IconCard = props => (
         }>
             <article className="w4 pa2 ">
                 <img src={props.image}
-                    className="db"
+                    className="db circle responsive-img"
                     alt="game-char"/>
             </article>
         </section>
