@@ -5,18 +5,24 @@ import React from 'react';
 
 
 const IconCard = props => (
-    <section id={props.id}
-        className="tc pa3 hvr-float-shadow animated zoomInUp"
+    <div id={props.id}
+        className="col s3"
         value={props.id}
         onClick={()=>
             props.clickedPlayer(props.id)
         }>
-            <article className="w4 pa2 ">
+            
                 <img src={props.image}
-                    className="db circle responsive-img"
+                    className="responsive-img circle"
+                    style={{"maxHeight":"400px", "maxWidth":"200px","minWidth":"200px","minHeight":"200px"}}
                     alt="game-char"/>
-            </article>
-        </section>
+            
+        </div>
+
+
+    //     <div class="col s2">
+    //     <img src="images/yuna.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+    //   </div>
 )
 
 export default IconCard;

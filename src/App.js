@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+// import './App.css';
 
 import NavBar from './components/NavBar';
 import Banner from './components/Banner';
@@ -91,21 +91,26 @@ class App extends Component {
 
       render(){
         return(
-          <div className='container'>
+          <div className='responsive-container' 
+          // style={{"backgroundColor":"black"}}
+          >
             <NavBar 
             topScore={this.state.topScore} 
             currentScore={this.state.currentScore}
             status={this.state.result} 
             />
             <Banner />
-            <div className = 'mainStyle'>
+            <div className = 'row'>
+            <div className="col l12">
               {this.state.Icons.map(icon => (
                 <IconCard
                   id={icon.id}
                   image={icon.image}
                   clickedPlayer={this.clickedPlayer}
+                  key={icon.id}
                   />
               ))}
+              </div>
             </div>
           </div>
         );
