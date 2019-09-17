@@ -12,17 +12,17 @@ const style = {
 
 const Banner = props => (
     <article style={style.bgDark}
-        className="mw7 center ph3 ph5-ns tc br2 pv3 bg-blac-90 mb5 animated fadeIn">
+        className="center-align  white-text">
         <img style={style.logoIcon}
             className='logoIcon'
-            src="https://i.giphy.com/media/26BRqPg05olzXG1bi/giphy.webp"
-            alt="pacman"/>
-        <h2 className="fw2 f4 1h-copy mt0 mb3 white animated fadeIn slower">
-            Select an image
+            src="https://66.media.tumblr.com/d8f1642e96a7e215bb40e76ae025690d/tumblr_msw9yfu1ir1qbbbqro1_500.gif"
+            alt="character scroll"/>
+        <h2 className="center-align white-text">
+            Choose a fighter
             <br></br>
-             If you haven't click it so far, your score will increase. 
+             If you haven't chosen them so far, your score will increase. 
             <br></br>
-            If you've chosen the image before
+            If you've chosen them before
             <br></br>
              it's Game Over.
             <br></br>

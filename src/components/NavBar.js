@@ -7,19 +7,19 @@ const style = {
 }
 
 const NavBar = props => (
-    <header style={style.bgDark} 
-        className= " w-100 ph3 pv3 pv2-ns ph4-m ph5-1 tc">
-            <nav className="f6 fw6 ttu tracked">
-                <p className="link dim white dib mr3"
-                    title="Home">Play Game</p>
-                <p className="link dim white dib mr3"
-                    title="Status">Status: {props.status}</p>
-                <p className="link dim white dib mr3"
-                    title="Score">Score: {props.currentScore}</p>
-                <p className="link dim white dib mr3"
-                    title="High Score">High Score: {props.topScore}</p>
-            </nav>
-        </header>
+    
+        <header>
+        <nav>
+        <div className="nav-wrapper black white-text">
+          <a href="#" className="brand-logo">Memory</a>
+          <ul id="nav-mobile" className="right hide-on-med-and-down">
+            <li><a href="">Play Game</a></li>
+            <li><a href="" className="disabled">Status: {props.status}</a></li>
+            <li><a href="" className="disabled">High Score: {props.topScore}</a></li>
+          </ul>
+        </div>
+      </nav>
+      </header>
 )
 
 export default NavBar;
